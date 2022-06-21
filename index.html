@@ -4,12 +4,352 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>quizz</title>
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" title="style" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div id="root">
-  test
+
+  <div id="titlediv">
+    <img id="testo" src="./resources/testosteron.png" >
+    <h1 id="titlequizz">Quizz de la Testostérone!</h1>
+  </div>
+
+  <div id="resume">
+    <h3>test</h3>
+  </div>
+
+<div id="bardiv">
+  <div id="bar">
+    <div id="barimg"></div>
+  </div>
 </div>
-  <script src="main.js" type="text/javascript"></script>
+
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci</h2>
+  </div>
+  <div class="reponse">
+    <label>
+    <img src="">
+    <input type="radio" name="question1" value="reponse 1" onchange="update(1)">
+    reponse 1</label>
+    <label>
+    <img src="" >
+    <input type="radio" name="question1" value="reponse 2" onchange="update(1)">
+    reponse 2</label>
+    <label>
+    <img src="" >
+    <input type="radio" name="question1" value="reponse 3" onchange="update(1)">
+    reponse 3</label>
+    <label>
+    <img src="" >
+    <input type="radio" name="question1" value="reponse 4" onchange="update(1)">
+    reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question2" id="reponse12" value="reponse 1" onchange="update(2)">
+    <label for="reponse12">reponse 1</label>
+    <input type="radio" name="question2" id="reponse22" value="reponse 2" onchange="update(2)">
+    <label for="reponse22">reponse 2</label>
+    <input type="radio" name="question2" id="reponse32" value="reponse 3" onchange="update(2)">
+    <label for="reponse32">reponse 3</label>
+    <input type="radio" name="question2" id="reponse42" value="reponse 4" onchange="update(2)">
+    <label for="reponse42">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question3" id="reponse13" value="reponse 1" onchange="update(3)">
+    <label for="reponse13">reponse 1</label>
+    <input type="radio" name="question3" id="reponse23" value="reponse 2" onchange="update(3)">
+    <label for="reponse23">reponse 2</label>
+    <input type="radio" name="question3" id="reponse33" value="reponse 3" onchange="update(3)">
+    <label for="reponse33">reponse 3</label>
+    <input type="radio" name="question3" id="reponse43" value="reponse 4" onchange="update(3)">
+    <label for="reponse43">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question4" id="reponse14" value="reponse 1" onchange="update(4)">
+    <label for="reponse14">reponse 1</label>
+    <input type="radio" name="question4" id="reponse24" value="reponse 2" onchange="update(4)">
+    <label for="reponse24">reponse 2</label>
+    <input type="radio" name="question4" id="reponse34" value="reponse 3" onchange="update(4)">
+    <label for="reponse34">reponse 3</label>
+    <input type="radio" name="question4" id="reponse44" value="reponse 4" onchange="update(4)">
+    <label for="reponse44">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question5" id="reponse15" value="reponse 1" onchange="update(5)">
+    <label for="reponse15">reponse 1</label>
+    <input type="radio" name="question5" id="reponse25" value="reponse 2" onchange="update(5)">
+    <label for="reponse25">reponse 2</label>
+    <input type="radio" name="question5" id="reponse35" value="reponse 3" onchange="update(5)">
+    <label for="reponse35">reponse 3</label>
+    <input type="radio" name="question5" id="reponse45" value="reponse 4" onchange="update(5)">
+    <label for="reponse45">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question6" id="reponse16" value="reponse 1" onchange="update(6)">
+    <label for="reponse16">reponse 1</label>
+    <input type="radio" name="question6" id="reponse26" value="reponse 2" onchange="update(6)">
+    <label for="reponse26">reponse 2</label>
+    <input type="radio" name="question6" id="reponse36" value="reponse 3" onchange="update(6)">
+    <label for="reponse36">reponse 3</label>
+    <input type="radio" name="question6" id="reponse46" value="reponse 4" onchange="update(6)">
+    <label for="reponse46">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question7" id="reponse17" value="reponse 1" onchange="update(7)">
+    <label for="reponse17">reponse 1</label>
+    <input type="radio" name="question7" id="reponse27" value="reponse 2" onchange="update(7)">
+    <label for="reponse27">reponse 2</label>
+    <input type="radio" name="question7" id="reponse37" value="reponse 3" onchange="update(7)">
+    <label for="reponse37">reponse 3</label>
+    <input type="radio" name="question7" id="reponse47" value="reponse 4" onchange="update(7)">
+    <label for="reponse47">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question8" id="reponse18" value="reponse 1" onchange="update(8)">
+    <label for="reponse18">reponse 1</label>
+    <input type="radio" name="question8" id="reponse28" value="reponse 2" onchange="update(8)">
+    <label for="reponse28">reponse 2</label>
+    <input type="radio" name="question8" id="reponse38" value="reponse 3" onchange="update(8)">
+    <label for="reponse38">reponse 3</label>
+    <input type="radio" name="question8" id="reponse48" value="reponse 4" onchange="update(8)">
+    <label for="reponse48">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question9" id="reponse19" value="reponse 1" onchange="update(9)">
+    <label for="reponse19">reponse 1</label>
+    <input type="radio" name="question9" id="reponse29" value="reponse 2" onchange="update(9)">
+    <label for="reponse29">reponse 2</label>
+    <input type="radio" name="question9" id="reponse39" value="reponse 3" onchange="update(9)">
+    <label for="reponse39">reponse 3</label>
+    <input type="radio" name="question9" id="reponse49" value="reponse 4" onchange="update(9)">
+    <label for="reponse49">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question10" id="reponse110" value="reponse 1" onchange="update(10)">
+    <label for="reponse110">reponse 1</label>
+    <input type="radio" name="question10" id="reponse210" value="reponse 2" onchange="update(10)">
+    <label for="reponse210">reponse 2</label>
+    <input type="radio" name="question10" id="reponse310" value="reponse 3" onchange="update(10)">
+    <label for="reponse310">reponse 3</label>
+    <input type="radio" name="question10" id="reponse410" value="reponse 4" onchange="update(10)">
+    <label for="reponse410">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question11" id="reponse111" value="reponse 1" onchange="update(11)">
+    <label for="reponse111">reponse 1</label>
+    <input type="radio" name="question11" id="reponse211" value="reponse 2" onchange="update(11)">
+    <label for="reponse211">reponse 2</label>
+    <input type="radio" name="question11" id="reponse311" value="reponse 3" onchange="update(11)">
+    <label for="reponse311">reponse 3</label>
+    <input type="radio" name="question11" id="reponse411" value="reponse 4" onchange="update(11)">
+    <label for="reponse411">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question12" id="reponse112" value="reponse 1" onchange="update(12)">
+    <label for="reponse112">reponse 1</label>
+    <input type="radio" name="question12" id="reponse212" value="reponse 2" onchange="update(12)">
+    <label for="reponse212">reponse 2</label>
+    <input type="radio" name="question12" id="reponse312" value="reponse 3" onchange="update(12)">
+    <label for="reponse312">reponse 3</label>
+    <input type="radio" name="question12" id="reponse412" value="reponse 4" onchange="update(12)">
+    <label for="reponse412">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question13" id="reponse113" value="reponse 1" onchange="update(13)">
+    <label for="reponse113">reponse 1</label>
+    <input type="radio" name="question13" id="reponse213" value="reponse 2" onchange="update(13)">
+    <label for="reponse213">reponse 2</label>
+    <input type="radio" name="question13" id="reponse313" value="reponse 3" onchange="update(13)">
+    <label for="reponse313">reponse 3</label>
+    <input type="radio" name="question13" id="reponse413" value="reponse 4" onchange="update(13)">
+    <label for="reponse413">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question14" id="reponse114" value="reponse 1" onchange="update(14)">
+    <label for="reponse114">reponse 1</label>
+    <input type="radio" name="question14" id="reponse214" value="reponse 2" onchange="update(14)">
+    <label for="reponse214">reponse 2</label>
+    <input type="radio" name="question14" id="reponse314" value="reponse 3" onchange="update(14)">
+    <label for="reponse314">reponse 3</label>
+    <input type="radio" name="question14" id="reponse414" value="reponse 4" onchange="update(14)">
+    <label for="reponse414">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question15" id="reponse115" value="reponse 1" onchange="update(15)">
+    <label for="reponse115">reponse 1</label>
+    <input type="radio" name="question15" id="reponse215" value="reponse 2" onchange="update(15)">
+    <label for="reponse215">reponse 2</label>
+    <input type="radio" name="question15" id="reponse315" value="reponse 3" onchange="update(15)">
+    <label for="reponse315">reponse 3</label>
+    <input type="radio" name="question15" id="reponse415" value="reponse 4" onchange="update(15)">
+    <label for="reponse415">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question16" id="reponse116" value="reponse 1" onchange="update(16)">
+    <label for="reponse116">reponse 1</label>
+    <input type="radio" name="question16" id="reponse216" value="reponse 2" onchange="update(16)">
+    <label for="reponse216">reponse 2</label>
+    <input type="radio" name="question16" id="reponse316" value="reponse 3" onchange="update(16)">
+    <label for="reponse316">reponse 3</label>
+    <input type="radio" name="question16" id="reponse416" value="reponse 4" onchange="update(16)">
+    <label for="reponse416">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question17" id="reponse117" value="reponse 1" onchange="update(17)">
+    <label for="reponse117">reponse 1</label>
+    <input type="radio" name="question17" id="reponse217" value="reponse 2" onchange="update(17)">
+    <label for="reponse217">reponse 2</label>
+    <input type="radio" name="question17" id="reponse317" value="reponse 3" onchange="update(17)">
+    <label for="reponse317">reponse 3</label>
+    <input type="radio" name="question17" id="reponse417" value="reponse 4" onchange="update(17)">
+    <label for="reponse417">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question18" id="reponse118" value="reponse 1" onchange="update(18)">
+    <label for="reponse118">reponse 1</label>
+    <input type="radio" name="question18" id="reponse218" value="reponse 2" onchange="update(18)">
+    <label for="reponse218">reponse 2</label>
+    <input type="radio" name="question18" id="reponse318" value="reponse 3" onchange="update(18)">
+    <label for="reponse318">reponse 3</label>
+    <input type="radio" name="question18" id="reponse418" value="reponse 4" onchange="update(18)">
+    <label for="reponse418">reponse 4</label>
+  </div>
+</div>
+
+<div class="questiondiv">
+  <div class="question">
+    <h2>Ceci est la question</h2>
+  </div>
+  <div class="reponse">
+    <input type="radio" name="question19" id="reponse119" value="reponse 1" onchange="update(19)">
+    <label for="reponse119">reponse 1</label>
+    <input type="radio" name="question19" id="reponse219" value="reponse 2" onchange="update(19)">
+    <label for="reponse219">reponse 2</label>
+    <input type="radio" name="question19" id="reponse319" value="reponse 3" onchange="update(19)">
+    <label for="reponse319">reponse 3</label>
+    <input type="radio" name="question19" id="reponse419" value="reponse 4" onchange="update(19)">
+    <label for="reponse419">reponse 4</label>
+  </div>
+</div>
+
+<div id="calcul">
+  <input type="button" value="calcul" onclick="calcul">
+</div>
+
+<div id="result">
+  <img id="charac" src="">
+  <p id="resum"></p>
+</div>
+
 </body>
 </html>
+<script  src="script.js"></script>
