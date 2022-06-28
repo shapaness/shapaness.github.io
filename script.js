@@ -1,15 +1,17 @@
-
-var divquest = document.getElementsByClassName("questiondiv");
+/*---init-hide---*/
+const divquest = document.getElementsByClassName("questiondiv");
 const len = divquest.length;
 for (var i = 1; i < divquest.length; i++)
   divquest[i].style.display  = "none";
 document.getElementById('calcul').style.display = "none";
 document.getElementById('result').style.display = "none";
 
+/*---init-arg---*/
 var barprog = document.getElementById('barimg')
 var prog = 0;
 var adv = 95 / divquest.length;
 
+/*---init-data---*/
 const resumof = {
   "WillSmith":"",
   "StephenLang":"",
@@ -106,7 +108,6 @@ var charac = {
   "RobertPatinson":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
   "HarryStyle":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 };
-
 const reponse = [
   [[],[],[],[]],
   [[],[],[],[]],
@@ -129,21 +130,7 @@ const reponse = [
   [[],[],[],[]]
 ];
 
-
-function max(){
-  var max = 0;
-  var ind = 0;
-  for (var i = 0; i < charac.length; i++) {
-    if(charac[i][0] > max){
-      max = charac[i][0];
-      ind = i;
-    }
-  }
-  return ind;
-}
-
-
-
+/*---update---*/
 function update(i) {
   if (i > prog) {
     if(i == len)
@@ -155,6 +142,7 @@ function update(i) {
   }
 }
 
+/*---calcul---*/
 function calcul(){
   var max = 0;
   var index = 0;
@@ -175,13 +163,11 @@ function calcul(){
     }
   }
   console.log(index);
-
   document.getElementById('charac').src = "./resources/"+tokey[index]+"png";
   document.getElementById('resum').innerHTML = resumof[tokey[index]];
-
 }
 
-
+/*---test---*/
 var prob = [];
 function testprob(i){
       if(i > len){
