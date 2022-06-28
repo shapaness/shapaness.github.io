@@ -38,7 +38,7 @@ const resumof = {
   "DaniCreg":"",
   "SamuelEljackson":"",
   "HarisonFord":"",
-  "NicolaSkage":"";
+  "NicolaSkage":"",
   "RobertPatinson":"",
   "HarryStyle":""
 };
