@@ -3,6 +3,11 @@
   display: none;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   position: absolute;
   background-color: red;
@@ -14,37 +19,32 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  top: 0;
-  left: 0;
   width: 100vw;
-  margin: 0;
+  height: 100vh;
 }
 #testo{
-  position: relative;
-  margin-top: auto;
-  margin-bottom: -5%;
-  bottom: 0;
-  left: 0;
+  position: absolute;
   width: 100vw;
   height: auto;
 }
 #titlequizz{
   width: 100%;
-  top:40%;
   color: rgba(255,255,255,0.8);
-  font-size: 10vw;
+  font-size: 5em;
   font-family: 'Fascinate', cursive;
+  top: 10%;
   text-align: center;
-  position: absolute;
+  position: relative;
   z-index: 5;
 }
 
 #resume{
-  margin-top: 5%;
+  position: relative;
   background-color: green;
   width: 100vw;
   height: 50vh;
 }
+
 
 
 #bardiv{
@@ -70,22 +70,49 @@ background-repeat: repeat;
 border-radius: 45px;
 height: 100%;
 width: 5%;
+transition: 1s all;
 }
 
+
 .questiondiv{
-  margin-top: 1%;
   background-color: white;
   width: 100vw;
   height: 100vh;
 }
 .question{
-  background-image: url();
-  position: relative;
-  top: 25%;
+  height: 20%;
   text-align: center;
 }
 .reponse{
-  position:relative;
   top: 25%;
+  width: 100%;
+  height: 50%;
   text-align: center;
+}
+.reponse > div{
+  display: inline-block;
+  margin: 2%;
+  width: 20vw;
+}
+.reponse label div{
+width: 20vw;
+height: 20vw;
+overflow: hidden;
+border-radius: 5%;
+}
+.reponse img{
+  height: 20vw;
+  width: auto;
+  transition: 1s all;
+}
+.reponse > div:hover img{
+  margin-left: -1vw;
+  height: 22vw;
+}
+.reponse h6{
+  transition: 1s all;
+  font-size: 2em;
+}
+.reponse input:checked + div{
+  border: solid 5px black;
 }
